@@ -28,7 +28,7 @@ Classify sonar signal readings to determine whether the reflected object is a **
   - `numpy`
   - `pandas`
   - `scikit-learn`
-  - 
+    
 
 
 
