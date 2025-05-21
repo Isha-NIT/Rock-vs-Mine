@@ -1,6 +1,7 @@
 # Rock vs Mine Prediction using Logistic Regression
 
-This machine learning project uses sonar signal data to predict whether an object is a **rock** or a **mine** based on reflected signals. It applies a **Logistic Regression** model to perform binary classification.
+This machine learning project uses sonar signal data to predict whether an object is a **rock** or a **mine** based on reflected signals. It applies a **Logistic Regression** model to perform binary classification.  
+
 
 
 
@@ -9,12 +10,14 @@ This machine learning project uses sonar signal data to predict whether an objec
 - **Source**: Included in the repository – `Copy of sonar data.csv`
 - **Description**: The dataset contains 208 samples, each with 60 sonar signal attributes and a label indicating whether the object is a **rock (R)** or a **mine (M)**.
 - **Format**: CSV with no header row.
+- 
 
 
 
 ## 🧠 Problem Statement
 
-Classify sonar signal readings to determine whether the reflected object is a **rock** or a **mine**.
+Classify sonar signal readings to determine whether the reflected object is a **rock** or a **mine**.  
+
 
 
 
@@ -25,6 +28,7 @@ Classify sonar signal readings to determine whether the reflected object is a **
   - `numpy`
   - `pandas`
   - `scikit-learn`
+  - 
 
 
 
@@ -56,8 +60,9 @@ Load essential Python libraries such as NumPy, Pandas, and Scikit-learn.
 
 - Accepts a new sonar input (60 features)
 - Predicts whether the object is a **rock** or a **mine**
+  
 
----
+
 
 ## 🧪 Sample Input & Output
 
