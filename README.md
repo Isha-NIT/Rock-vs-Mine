@@ -2,21 +2,21 @@
 
 This machine learning project uses sonar signal data to predict whether an object is a **rock** or a **mine** based on reflected signals. It applies a **Logistic Regression** model to perform binary classification.
 
----
+
 
 ## 📊 Dataset
 
-- **Source**: [UCI Machine Learning Repository - Sonar Dataset](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))
+- **Source**: Included in the repository – `Copy of sonar data.csv`
 - **Description**: The dataset contains 208 samples, each with 60 sonar signal attributes and a label indicating whether the object is a **rock (R)** or a **mine (M)**.
 - **Format**: CSV with no header row.
 
----
+
 
 ## 🧠 Problem Statement
 
 Classify sonar signal readings to determine whether the reflected object is a **rock** or a **mine**.
 
----
+
 
 ## 🛠️ Tech Stack & Tools
 
@@ -26,7 +26,7 @@ Classify sonar signal readings to determine whether the reflected object is a **
   - `pandas`
   - `scikit-learn`
 
----
+
 
 ## 🚀 Project Workflow
 
