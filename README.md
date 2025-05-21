@@ -10,7 +10,7 @@ This machine learning project uses sonar signal data to predict whether an objec
 - **Source**: Included in the repository – `Copy of sonar data.csv`
 - **Description**: The dataset contains 208 samples, each with 60 sonar signal attributes and a label indicating whether the object is a **rock (R)** or a **mine (M)**.
 - **Format**: CSV with no header row.
-- 
+ 
 
 
 
