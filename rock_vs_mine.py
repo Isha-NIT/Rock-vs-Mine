@@ -1,8 +1,4 @@
-#ROCK-vs-MINE
-
-
-Importing Libraries
-"""
+"""Importing Libraries"""
 
 import numpy as np
 import pandas as pd
@@ -10,36 +6,37 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
+
 """Data Collection and Processing"""
 
 sonar_data=pd.read_csv("/content/Copy of sonar data.csv",header=None)
-
 sonar_data.head()
-
 sonar_data.shape
-
 sonar_data.describe()
-
 sonar_data[60].value_counts()
-
 sonar_data.groupby(60).mean()
 
+
 #splitting data and labels
+
 X=sonar_data.drop(columns=60,axis=1)
 Y=sonar_data[60]
 print(X)
 print(Y)
 
+
 """Splitting Training and Test data"""
 
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.1,stratify=Y,random_state=1)
 print(X.shape,X_train.shape,X_test.shape,Y.shape,Y_train.shape,Y_test.shape)
-#print(Y_test)
+print(Y_test)
+
 
 """Training the Model"""
 
 model=LogisticRegression()
 model.fit(X_train,Y_train)
+
 
 """Model Evaluation"""
 
@@ -50,6 +47,7 @@ print('Accuracy on training data :',training_acc)
 X_test_prediction=model.predict(X_test)
 test_acc=accuracy_score(X_test_prediction,Y_test)
 print("Accuracy on test data :",test_acc)
+
 
 """Making a Predictive System"""
 
@@ -62,3 +60,5 @@ if prediction[0]=='R':
   print("The object is a rock")
 else:
   print("The object is a mine")
+
+
